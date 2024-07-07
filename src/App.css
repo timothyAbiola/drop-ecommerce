@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+/* logo sizing */
+.img-logo {
+  width: 5em;
+  height: 1.5em;
+}
+/* main */
+.small-font {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+/* main brand logo */
+.brand {
+  width: 20%;
+}
+.btn-light-green {
+  background-color: #99db71;
+  color: white;
+  border-radius: 20px;
+}
+.sale-text {
+  font-size: 0.7em;
+}
+.rounded-board {
+  border-radius: 18px;
+}
+.shoe-card {
+  width: 90%;
+  background-color: rgba(162, 160, 160, 0.395);
+  height: 8rem;
+}
+.card-text {
+  line-height: 1;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(66, 65, 65);
+}
+/* Display of goods page */
+.sneakers-text{
+  font-size: 0.9em;
+}
+
+/* media queries */
+@media (min-width: 470px) {
+  .shoe-card {
+    width: 13rem;
+  }
+}
