@@ -5,6 +5,8 @@ import adidas from "../assets/addidas.png";
 import nike from "../assets/nike.png";
 import vans from "../assets/vans.png";
 import newbalance from "../assets/newbalance.png";
+import showoff from "../assets/showoff.png"
+import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -41,10 +43,11 @@ const Main = () => {
         />
         <img src={nike} className="rounded-circle border border-light brand" />
       </div>
-      <div className="border border-light rounded-board bg-black  mx-3 my-4 d-flex justify-content-end p-2">
-        {/* awaiting designer image on the board */}
-        <div></div>
-        <div className="">
+      <div className="border border-light rounded-board bg-black  my-4 d-flex justify-content-between">
+        <Link>
+            <img src={showoff} alt="" style={{width: '100%'}} />
+        </Link>
+        <div style={{width: "50%", paddingTop:"20px" }}>
           <h3 className="text-light fs-6">Year-End Sale</h3>
           <h5 className="text-secondary fs-6">Up to 90%</h5>
           <button className="btn btn-light-green sale-text">Shop Now</button>

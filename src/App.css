@@ -44,11 +44,55 @@
   color: rgb(66, 65, 65);
 }
 /* Display of goods page */
-.sneakers-text{
-  font-size: 0.9em;
+.sneakers-text {
+  font-size: 90%;
+}
+.shoe-type {
+  height: fit-content;
+}
+.items {
+  z-index: 1;
+  left: 500px;
+}
+.ellipse {
+  top: 60%;
+  z-index: 0;
+}
+
+/* .mini-square{
+  width: 20px;
+  height: 50px;
+} */
+.lil-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  border: 2px solid black;
+}
+/* footer part of display */
+.cart, .buy{
+  border-radius: 30px;
+  font: 700;
+}
+.cart{
+  color: #086d24;
+}
+.buy{
+  background-color: #086d24;
+  color: white;
+}
+.house{
+  border-radius: 48%;
+  height: 60px;
+  width: 60px;
 }
 
 /* media queries */
+@media (min-width: 300px) {
+  .sneakers-text {
+    font-size: 1rem;
+  }
+}
 @media (min-width: 470px) {
   .shoe-card {
     width: 13rem;
