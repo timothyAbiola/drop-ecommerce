@@ -6,7 +6,10 @@
   outline: none;
   text-decoration: none;
 }
-
+/* header */
+.web-version {
+  display: none;
+}
 /* logo sizing */
 .img-logo {
   width: 5em;
@@ -17,9 +20,15 @@
   font-size: 0.7em;
   font-weight: 600;
 }
+.filter {
+  display: none;
+}
 /* main brand logo */
 .brand {
   width: 20%;
+}
+a {
+  text-decoration: none;
 }
 .btn-light-green {
   background-color: #99db71;
@@ -58,6 +67,9 @@
   top: 60%;
   z-index: 0;
 }
+.hide {
+  display: none;
+}
 
 /* .mini-square{
   width: 20px;
@@ -70,21 +82,40 @@
   border: 2px solid black;
 }
 /* footer part of display */
-.cart, .buy{
+.cart,
+.buy {
   border-radius: 30px;
   font: 700;
 }
-.cart{
+.cart {
   color: #086d24;
 }
-.buy{
+.buy {
   background-color: #086d24;
   color: white;
 }
-.house{
+.house {
   border-radius: 48%;
   height: 60px;
   width: 60px;
+}
+/* Cart */
+.round-holder {
+  margin-top: 60%;
+  position: relative;
+  height: 35vh;
+}
+.ellipse {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  width: 60%;
+}
+.vector {
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  width: 40%;
 }
 
 /* media queries */
@@ -97,4 +128,97 @@
   .shoe-card {
     width: 13rem;
   }
+}
+@media (min-width: 700px) {
+  .mobile {
+    display: none !important;
+  }
+  .web-version {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .userAcc {
+    background-color: rgb(217, 214, 214);
+    border-radius: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .search-holder {
+    width: 350px !important;
+    height: 50px !important;
+  }
+  .address {
+    border-radius: 30px;
+    background-color: rgb(221, 218, 218);
+    width: 350px !important;
+    height: 50px !important;
+    padding-left: 40px;
+  }
+  .contigent {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .filter {
+    display: inline;
+  }
+  .brands-min {
+    width: 60vw;
+    margin: 50px auto;
+  }
+  .brand {
+    width: 100px;
+  }
+  .year-sale {
+    width: 400px;
+  }
+  .hide {
+    display: block;
+  }
+  .unshow {
+    display: none;
+  }
+  .arrive {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .animate {
+    background-color: rgb(230, 225, 225);
+    width: 500px;
+    height: 300px;
+    position: relative;
+  }
+  .nikey {
+    position: absolute;
+    top: -110px;
+    right: 40px;
+  }
+  .heart {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    background-color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+  .small-size {
+    width: 80px;
+    height: 80px;
+  }
+  .shoe-end {
+    position: absolute;
+    right: 80px;
+    width: 500px;
+
+  }
+  /* .shoe-display{
+    display: flex !important;
+    width: 500px;
+    position: absolute;
+    right: 0;
+  } */
 }

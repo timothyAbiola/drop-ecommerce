@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 const MainProduct = () => {
   return (
     <>
-      <div className="container-fluid">
-        <div className="row fw-bold px-3">New Arrival</div>
-        <div className="row gap-1 ">
+      <div className="container-fluid shoe-end">
+        <div className="row fw-bold px-3 unshow">New Arrival</div>
+        <div className="row gap-1 shoe-display">
           <Link
             to="/nikeproduct"
             style={{ width: "fit-content" }}
@@ -57,6 +57,7 @@ const MainProduct = () => {
               price="$85"
             />
           </Link>
+          
         </div>
       </div>
     </>

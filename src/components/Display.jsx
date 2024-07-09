@@ -63,10 +63,10 @@ const Display = ({ Nike, Nike_Roll, Lebron_roll1 }) => {
           </div>
         </div>
         <div className="row m-2 justify-content-between">
-          <button className="col-5 border cart border-secondary p-2 align-items-center d-flex justify-content-center gap-2">
+          <Link to="/cart" className="col-5 border cart border-secondary p-2 align-items-center d-flex justify-content-center gap-2">
             <CiShoppingCart size={35} />
             <span>Add to Cart</span>
-          </button>
+          </Link>
           <button className="col-2 border house border-secondary p-2">
             <PiHouseSimple size={30} color="#086d24" />
           </button>

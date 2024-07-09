@@ -7,9 +7,9 @@ const Card = ({ shoe, saleText,price }) => {
         <img
           src={shoe}
           alt=""
-          className="border rounded-board border-light shoe-card"
+          className="border rounded-board border-light shoe-card small-size"
         />
-        <div className="card-text px-4 text-start my-2">
+        <div className="card-text px-4 text-start my-2 unshow">
             <span>{saleText}</span> <br />
           <span className="text-black fw-bolder">{price}</span>
         </div>
